@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60%;
+  height: 60%;
+}
+
+.card-grid{
+  height: 60vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  padding: 5%;
+}
+
+.Sadans-card{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 0 0 5px;
+}
+
+.SUVs-card{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.Luxury-card{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+}
+
+.header{
+  color: white;
+}
+
+.card-info{
+  color: hsl(0, 0%, 85%);
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  font-size: .8rem;
+  font-weight: bolder;
+}
+
+.learn-more{
+  justify-content: center;
+}
+
+.learn-more-btn{
+  width: 70%;
+  height: 60%;
+  background-color: white;
+  border: solid 2.5px white;
+  border-radius: 3rem;
+  font-weight: 800;
+  margin-top: 1.5rem;
+  transition: .5s;
+}
+
+.Sadans-card .learn-more-btn{
+  color: hsl(31, 77%, 52%);
+}
+.SUVs-card .learn-more-btn{
+  color: hsl(184, 100%, 22%);
+}
+.Luxury-card .learn-more-btn{
+  color: hsl(179, 100%, 13%);
+}
+
+.Sadans-card .learn-more-btn:hover{
+  color: white;
+  background-color: hsl(31, 77%, 52%);
+}
+.SUVs-card .learn-more-btn:hover{
+  color: white;
+  background-color: hsl(184, 100%, 22%);
+}
+.Luxury-card .learn-more-btn:hover{
+  color: white;
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+@media only screen and (max-width: 1100px) {
+  main{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 80%;
+  }
+  .Sadans-card{
+    border-radius: 5px 5px 0 0;
+  }
+  .Luxury-card{
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 1000px;
+  }
+}
